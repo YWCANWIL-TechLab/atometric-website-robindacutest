@@ -14,6 +14,8 @@
   </head>
   <body transition-style=""> 
 
+<!--* Right now you have two separate navbars. It doesn't really matter which one you choose to get rid of, but be sure you only keep one navbar, or else your users are going to be confused.-->
+
     <section class="navigation-container" id="nav-bar">
       <button onclick="goToTop()" id="back-to-top" title="Go to top"><i class="fa fa-toggle-up"></i></button>
       <nav class="atometric-top">
@@ -23,11 +25,13 @@
         <div class="mobile-button">
           <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
         </div>
+        <!--* Remove this one-->
         <div class="links">
           <a href="#about" >ABOUT</a>-
           <a href="#consulting" >CONSULTING</a>-
           <a href="#contact" >CONTACT</a>            
         </div>
+        <!--* Or remove this one-->
         <div id="mobile-sidenav" class="mobile-snav"></div>
           <a href="javascript:void(0)" class="nav" onclick="toggleMobileNavigation()">&times;</a>
           <a href="#about" onclick="toggleMobileNavigation()">ABOUT</a>
@@ -35,12 +39,16 @@
           <a href="#contact" onclick="toggleMobileNavigation()">CONTACT</a>
         </div>
       </nav>++++++++++++
+
+          <!-- * It looks like this isn't hte most recent version of your website, so you might have some issues making some of these changes. I know during class yesterday we  added a background image to this element.-->
+
     <section class="hero"  id="hero-background">
       <h1 style="display: inline;"><span><i class="face box"></i></span>Steer your idea in the right direction!</h1>
       <p>Experiance the pinnacle of precison with our state of the art automated machines.</p>
       <a href="#contact" class="scheldule">Schedule An Appointment</a>
     </section>
 
+    <!--* I would remove your background image here. It is a duplicate of the one above and it has x-repeat. I think you would be better suited using some type of a gradient for a background instead a background image here.-->
     <section class="atometics about tab" id="about">
       <div class="atm-about-container">
         <h2 style="text-align: center;">- Our Mission -</h2>
@@ -59,6 +67,9 @@
       <article>Welcome to our enhanced digital abode - Atometric.com! While the address remains unchanged, we're thrilled to unveil our brand-new design and updated content. 
         Stay tuned for frequent news updates, featuring trade show schedules and other exciting events. Come back often to stay in the loop!</article>
 
+        <!-- * I would get rid of this entire section of your page. We don't have images of the leadership of Atometric and we won't have time to make that change, so I think it would look better without it.
+        
+        * HOWEVER, I'm a fan of that card effect it uses with the box-shadow, so it might look cool to apply a box-shadow/card effect to other parts of your page as well.-->
       <div class="leadership content container w3-margin-top w3-round-large">
         <h3 style="text-align: center;">- Leadership -</h3>
         <p style="text-align: center;"><em>"Leadership is about being a servant first."</em> <strong>- Allen West</strong></p>
@@ -125,6 +136,7 @@
       </div>      
     </section>
 
+    <!--* This effect is cool, but make sure you change the text of each of these paragraphs. The text isn't representative of the services Atometric offers, so change it to text from the Micro Milling pdf or the Small Parts pdf.-->
     <section id="consulting" class="w3-container container consulting content">
       <h2 style="text-align: center;">- What we do -</h2>
       <div class="c-card w3-margin-top">
@@ -147,6 +159,7 @@
       </div>
     </section>
 
+    <!--* This text needs to be changed. This isn't true for Atometric, but you could keep this section with different text if you want.-->
     <section class="w3-panel w3-container content why-us" style="padding: 50px;">
       <h2 style="text-align: center;">- Why choose us? -</h2>
       <div class="container boxes">
@@ -168,6 +181,7 @@
       </div>
     </section>
 
+    <!--* You should remove all of the social media links. Atometric has no socials. Make sure you change the contact info to the correct info for Atometric.-->
     <section class="contact w3-container contact" id="contact">
       <div class="short-contact">
         <h2>- Our contact info - </h2>
@@ -183,6 +197,7 @@
           <i class="fa fa-twitter-square"></i><span style="margin-left:10px;"><a href="#" target="_blank" style="text-decoration: none;">- Twitter</a></span><br>
         </div>
       </div>
+      <!--* As cool as your form looks, if it will not actually send the info from the form (like it won't right now), I would recommend removing it entirely.-->
       <div class="form w3-margin-top">
         <div class="container w3-round-xlarge">
           <form class="w3-highway-blue w3-padding-large w3-round-large">
@@ -202,6 +217,7 @@
       </div>
     </section>
 
+    <!--* Remove this section entirely.-->
     <section class="w3-container footer">
       <p class="w3-center logo">© 2022 - CONSULTCORP - All rights reserved</p>
     </section>
